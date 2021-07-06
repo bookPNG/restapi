@@ -19,4 +19,4 @@ class Sum(Resource):
 api.add_resource(Helloworld, '/hello') #http://127.0.0.1:5000/
 api.add_resource(Sum, '/sum')
 
-app.run(port = 5001, debug = True)
+app.run(port = 5100, debug = True)
