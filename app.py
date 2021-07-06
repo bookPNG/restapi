@@ -1,8 +1,8 @@
 from flask import Flask, request
 from flask_restful import Resource, Api
 
-app = Flask(__name__)
-api = Api(app)
+appflask = Flask(__name__)
+api = Api(appflask)
 
 class Helloworld(Resource):
     def get(self):
@@ -18,5 +18,3 @@ class Sum(Resource):
 
 api.add_resource(Helloworld, '/hello') #http://127.0.0.1:5000/
 api.add_resource(Sum, '/sum')
-
-app.run(port = 5100, debug = True)
